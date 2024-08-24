@@ -1,0 +1,10 @@
+<div style="margin: 2px;">
+    <input [value]="n1" type="number" (input)="onInputChange1($event)" placeholder="Valor 1" />
+</div>
+<div style="margin: 2px;">
+    <input [value]="n2" type="number" (input)="onInputChange2($event)" placeholder="Valor 2"/>
+</div>
+<app-calc-actions (buttonClicked)="onButtonClicked($event)"></app-calc-actions> 
+<div style="margin: 2px 0 2px 0;">
+    <input [value]="result" />
+</div>
